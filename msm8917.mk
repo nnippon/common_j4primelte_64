@@ -325,10 +325,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc
     
-ifneq ($(filter j6primelte,$(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-endif
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
